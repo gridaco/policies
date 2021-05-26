@@ -1,7 +1,11 @@
 {
     "name": "@policies/bridged-valid-username",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "private": false,
+    "homepage": "https://github.com/bridgedxyz/policies",
+    "repository": "https://github.com/bridgedxyz/policies",
+    "author": "Bridged Authors - softmarshmallow",
+    "license": "Apache 2.0",
     "scripts": {
         "preinstall": "source preinstall.sh",
         "prepack": "tsc",
