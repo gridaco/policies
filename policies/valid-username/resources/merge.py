@@ -32,7 +32,7 @@ out_file_rel_dir = "../exclude.json"
 out_file = os.path.join(_path, out_file_rel_dir)
 
 with open(out_file, 'w') as f:
-    json.dump(BLACKLIST_DATA, f)
+    json.dump(BLACKLIST_DATA, f, indent=2)
 
 # res_badwords_dir = join(dir_path, '/badwords')
 
