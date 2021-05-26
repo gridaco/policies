@@ -2,7 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
@@ -11,5 +12,6 @@
     "__tests__",
     "__test__",
     "docs"
-  ]
+  ],
+  "include": ["./exclude.json"]
 }
