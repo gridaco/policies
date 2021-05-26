@@ -1,0 +1,24 @@
+{
+    "name": "@policies/bridged-valid-username",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "preinstall": "source preinstall.sh",
+        "prepack": "tsc",
+        "test": "jest"
+    },
+    "files": [
+        "index.js",
+        "index.d.ts",
+        "dist/**/*.js",
+        "dist/**/*.json",
+        "dist/**/*.d.ts",
+        "README"
+    ],
+    "devDependencies": {
+        "@types/jest": "^26.0.23",
+        "jest": "^27.0.1",
+        "ts-jest": "^27.0.0",
+        "typescript": "^4.3.2"
+    }
+}
