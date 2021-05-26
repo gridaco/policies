@@ -1,14 +1,14 @@
 {
     "name": "@policies/bridged-valid-username",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": false,
     "homepage": "https://github.com/bridgedxyz/policies",
     "repository": "https://github.com/bridgedxyz/policies",
     "author": "Bridged Authors - softmarshmallow",
     "license": "Apache 2.0",
     "scripts": {
-        "preinstall": "source preinstall.sh",
-        "prepack": "tsc",
+        "build:res": "source res-build.sh",
+        "prepack": "yarn build:res && tsc",
         "test": "jest"
     },
     "files": [
