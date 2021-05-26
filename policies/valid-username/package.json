@@ -1,7 +1,7 @@
 {
     "name": "@policies/bridged-valid-username",
     "version": "0.0.0",
-    "private": true,
+    "private": false,
     "scripts": {
         "preinstall": "source preinstall.sh",
         "prepack": "tsc",

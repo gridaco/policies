@@ -9,6 +9,18 @@ We use the exact same package on our production, keeping things clean and clear.
 
 Although, security related policies are kepted private, accessible to only few people.
 
+## Usage
+
+```
+yarn add @policies/<policy-name>
+```
+
 ## Policies
 
+**General**
+
 - [valid-username](./valid-username) - a logic used to validate username on sigup
+
+**Bridged Specific**
+
+- [@policies/bridged-valid-username](https://www.npmjs.com/package/@policies/bridged-valid-username) - a logic used to validate username on sigup with bridged specific reserved keywords.
