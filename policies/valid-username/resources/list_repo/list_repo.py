@@ -22,7 +22,8 @@ def normalize(name):
 
 GITHUB_PERSONAL_ACCESS_TOKEN = os.environ.get("PERSONAL_GITHUB_ACCESS_TOKEN")
 g = Github(GITHUB_PERSONAL_ACCESS_TOKEN)
-ORGS = ["bridgedxyz", 'reflect-ui', 'surfcodes', 'colicodes', 'nothing-app']
+ORGS = ["gridaco", "bridgedxyz", 'reflect-ui',
+        'surfcodes', 'colicodes', 'nothing-app']
 
 for org in ORGS:
     for repo in g.get_organization(org).get_repos():
