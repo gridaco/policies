@@ -23,4 +23,4 @@ yarn add @policies/<policy-name>
 
 **Bridged Specific**
 
-- [@policies/bridged-valid-username](https://www.npmjs.com/package/@policies/bridged-valid-username) - a logic used to validate username on sigup with bridged specific reserved keywords.
+- [@policies/grida-valid-username](https://www.npmjs.com/package/@policies/grida-valid-username) - a logic used to validate username on sigup with bridged specific reserved keywords.
