@@ -1,6 +1,6 @@
 {
     "name": "@policies/grida-valid-username",
-    "version": "0.1.0",
+    "version": "0.1.9",
     "private": false,
     "main": "dist/index.js",
     "homepage": "https://github.com/gridaco/policies",
