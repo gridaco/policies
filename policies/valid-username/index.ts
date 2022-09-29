@@ -25,6 +25,7 @@ function _validate_reserved(username: string): boolean {
 export type InvalidationType =
   | "already-taken"
   | "too-long"
+  | "too-short"
   | "blank-space"
   | "start-with-hyphen"
   | "end-with-hyphen"
@@ -93,6 +94,12 @@ function why_not(invalid: string): {
   char?: string;
 } {
   // assuming that the input is already prevalidated, and invalid
+
+  if (invalid.length < 1) {
+    return {
+      type: "too-short",
+    };
+  }
 
   if (invalid.length > 38) {
     return {
