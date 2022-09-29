@@ -13,5 +13,5 @@
     "__test__",
     "docs"
   ],
-  "include": ["./exclude.json"]
+  "include": ["./exclude.json", "index.ts"]
 }

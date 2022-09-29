@@ -1,15 +1,18 @@
 {
     "name": "@policies/grida-valid-username",
-    "version": "0.1.9",
+    "version": "0.2.0",
     "private": false,
     "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "homepage": "https://github.com/gridaco/policies",
     "repository": "https://github.com/gridaco/policies",
     "author": "Grida Authors - softmarshmallow",
     "license": "Apache 2.0",
     "scripts": {
+        "clean": "rimraf dist",
+        "build": "tsc",
         "build:res": "source res-build.sh",
-        "prepack": "yarn build:res && tsc",
+        "prepack": "yarn test && yarn clean && yarn build:res && yarn build",
         "test": "jest"
     },
     "files": [
@@ -25,7 +28,7 @@
         "@types/node": "^18.7.23",
         "jest": "^27.0.1",
         "ts-jest": "^27.0.0",
-        "typescript": "^4.3.2"
+        "typescript": "^4.8.4"
     },
     "publishConfig": {
         "access": "public"

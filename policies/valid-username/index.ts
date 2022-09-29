@@ -16,7 +16,7 @@ function _validate(username: string): boolean {
  * @param username
  * @returns
  */
-export function _validate_reserved(username: string): boolean {
+function _validate_reserved(username: string): boolean {
   // if not included, return true - valid
   // if included, return false - invalid
   return !RESERVED_KEYWORDS.includes(username);
